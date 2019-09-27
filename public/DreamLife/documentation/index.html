@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>DreamLife Responsive HTML Template Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="Autor">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">DreamLife Responsive HTML Template</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#markup">Markup</a></li>
+                            <li><a href="#styles">Styles</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                            <!-- 
+                            <li><a href="#psd">Photoshop</a></li>
+                            <li><a href="#installation">Installation</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+            
+                <div class="hero-unit">
+                    <h1>Documentation</h1>
+                    <p class="well well-small">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/DesignForLife">here</a>. Thanks so much!</p>
+                    <div class="row-fluid">
+                        <div class="span3"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                        <div class="span3"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                    </div>
+    
+                </div>
+                
+                <hr>
+                
+                <div class="row-fluid">
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author:</td>
+                                <td>DesignForLife</td>
+                            </tr>
+                            <tr>
+                                <td>Contact:</td>
+                                <td><a href="mailto:safahaliloglu@gmail.com">safahaliloglu@gmail.com</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author URL:</td>
+                                <td><a href="http://goo.gl/gPptB">My Profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>Item URL:</td>
+                                <td><a href="http://dreamlife.designforlifeden.com">dreamlife.designforlifeden.com</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Current Version:</td>
+                                <td>1.0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation Version</td>
+                                <td>1.0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Created:</td>
+                                <td>2013-01-24</td>
+                            </tr>
+                            <tr>
+                                <td>Modified:</td>
+                                <td>2013-01-24</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+          
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="markup">
+                <div class="page-header">
+                    <h1>Markup <small>Markup customization and highlights</small></h1>
+                </div>
+            
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: Testimonials Rotator</h3>
+    	<p></p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- Note: grid_4 optional --&gt;
+
+&lt;!-- testimonials --&gt;
+&lt;div class=&quot;grid_4 omega&quot;&gt;
+ &lt;div class=&quot;divider_page&quot;&gt;
+  &lt;h2&gt;What Client's Say&lt;/h2&gt;
+  &lt;div class=&quot;heading_button&quot;&gt;
+   &lt;div class=&quot;prev_button&quot; id=&quot;testimonials_prev&quot;&gt;Prev&lt;/div&gt;
+   &lt;div class=&quot;next_button&quot; id=&quot;testimonials_next&quot;&gt;Next&lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;<br/>
+ &lt;div class=&quot;testimonials&quot;&gt;
+  &lt;!-- a testimonial --&gt;
+  &lt;div class=&quot;testimonial&quot;&gt;
+   &lt;div class=&quot;desc&quot;&gt;Testimonial Desc&lt;/div&gt;
+   &lt;div class=&quot;who&quot;&gt;
+     &lt;img src=&quot;envato_logo.png&quot; alt=&quot;&quot;/&gt; &lt;span class=&quot;name&quot;&gt;John Doe&lt;/span&gt;&lt;span class=&quot;job&quot;&gt; , Web Developer&lt;/span&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- a testimonial end --&gt;
+  
+  &lt;!-- a testimonial --&gt;
+  ...
+  &lt;!-- a testimonial end --&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- testimonials end --&gt;
+</pre>    
+    </div>
+</div>
+
+                <hr />
+            
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: Recent Work Item</h3>
+    	<p>Just duplicate this lines.</p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- a work --&gt;
+&lt;div class=&quot;a_work&quot;&gt; 
+ &lt;div class=&quot;normal&quot;&gt;
+  &lt;img src=&quot;assets/images/mix/940/businessman_fixed.jpg&quot; alt=&quot;Business Man&quot; class=&quot;grid_image&quot;/&gt;
+  &lt;div class=&quot;work_heading&quot;&gt;Business Man&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;hover&quot;&gt;
+  &lt;h4&gt;Business Man&lt;/h4&gt;
+  &lt;div class=&quot;work_links&quot;&gt;
+   &lt;div&gt;&lt;a href=&quot;businessman.jpg&quot; data-rel=&quot;prettyPhoto&quot; class=&quot;misc_white_icons16 icon16_15&quot; title=&quot;Big Size&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+   &lt;div&gt;&lt;a href=&quot;single_project.html&quot; class=&quot;misc_white_icons16 icon16_67&quot; title=&quot;Project Details&quot;&gt;&lt;/a&gt;&lt;div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+  &lt;!-- social links --&gt;
+  &lt;div class=&quot;social_links&quot;&gt;
+   &lt;div class=&quot;share_text&quot;&gt;Share on&lt;/div&gt;
+   &lt;div class=&quot;share_icons&quot;&gt;
+    &lt;a href=&quot;http://twitthis.com/twit?url=http://designforlifeden.com&quot; target=&quot;_blank&quot; class=&quot;social_colored twitter tooltip_s&quot; title=&quot;Twitter&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://www.facebook.com/sharer.php?u=http://designforlifeden.com&quot; target=&quot;_blank&quot; class=&quot;social_colored facebook tooltip_s&quot; title=&quot;Facebook&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://linkedin.com/shareArticle?mini=true&amp;amp;url=http://designforlifeden.com&amp;amp;title=DreamLife%20Responsive%20Template&quot; target=&quot;_blank&quot; class=&quot;social_colored linkedin tooltip_s&quot; title=&quot;LinkedIn&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;mailto:?subject=DreamLife%20Responsive%20Template&amp;amp;body=http://designforlifeden.com&quot; class=&quot;social_colored mail tooltip_s&quot; title=&quot;Mail&quot;&gt;&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- social links end --&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- a work end --&gt;
+</pre>    
+    </div>
+</div>
+
+                <hr />
+            
+<div class="row">
+    <div class="span12">
+    	<h3>How to edit: Portfolio Categories (Filter Options)</h3>
+    	<p><code>"data-cat"</code> attributes needed for filter.</p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- filter options --&gt;
+&lt;div class=&quot;filter_options portfolio_options&quot;&gt;
+ &lt;ul&gt;
+  &lt;li data-cat=&quot;all&quot; class=&quot;active&quot;&gt;&lt;span class=&quot;heading&quot;&gt;All&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;14&lt;/span&gt;&lt;/li&gt;
+  &lt;li data-cat=&quot;web&quot;&gt;&lt;span class=&quot;heading&quot;&gt;Web&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;&lt;/li&gt;
+  &lt;li data-cat=&quot;logo&quot;&gt;&lt;span class=&quot;heading&quot;&gt;Logo&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;&lt;/li&gt;
+  &lt;li data-cat=&quot;photography&quot;&gt;&lt;span class=&quot;heading&quot;&gt;Photography&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;&lt;/li&gt;
+  &lt;li data-cat=&quot;interactive&quot;&gt;&lt;span class=&quot;heading&quot;&gt;Interactive&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- filter options end --&gt;
+</pre>    
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: Portfolio Item</h3>
+    	<p>Of course you can add a few categories on <code>"data-cats"</code> attribute.</p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- a portfolio item --&gt;
+&lt;div class=&quot;a_item&quot; data-cats=&quot;photography interactive&quot;&gt;
+&lt;!-- item image --&gt;
+&lt;div class=&quot;grid_6&quot;&gt;
+&lt;div class=&quot;a_work&quot;&gt;
+&lt;!-- image --&gt; 
+&lt;div class=&quot;normal&quot;&gt;
+&lt;img src=&quot;assets/images/mix/940/businessman_fixed.jpg&quot; alt=&quot;&quot; class=&quot;grid_image&quot;/&gt;
+&lt;/div&gt;
+&lt;!-- image end --&gt;
+&lt;!-- hover effect --&gt;
+&lt;div class=&quot;hover&quot;&gt;
+&lt;h4&gt;Business Man&lt;/h4&gt;
+&lt;div class=&quot;work_links&quot;&gt;
+&lt;div&gt;&lt;a href=&quot;assets/images/mix/940/businessman.jpg&quot; data-rel=&quot;prettyPhoto&quot; class=&quot;misc_white_icons16 icon16_15&quot; title=&quot;Business Man&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;single_project.html&quot; class=&quot;misc_white_icons16 icon16_67&quot; title=&quot;Project Details&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;!-- social links --&gt;
+&lt;div class=&quot;social_links&quot;&gt;
+&lt;div class=&quot;share_text&quot;&gt;Share on&lt;/div&gt;
+&lt;div class=&quot;share_icons&quot;&gt;
+&lt;a href=&quot;http://twitthis.com/twit?url=http://dreamlife.designforlifeden.com&quot; target=&quot;_blank&quot; class=&quot;social_colored twitter tooltip_s&quot; title=&quot;Twitter&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.facebook.com/sharer.php?u=http://dreamlife.designforlifeden.com&quot; target=&quot;_blank&quot; class=&quot;social_colored facebook tooltip_s&quot; title=&quot;Facebook&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;http://linkedin.com/shareArticle?mini=true&amp;amp;url=http://dreamlife.designforlifeden.com&amp;amp;title=DreamLife%20Responsive%20Template&quot; target=&quot;_blank&quot; class=&quot;social_colored linkedin tooltip_s&quot; title=&quot;LinkedIn&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;mailto:?subject=DreamLife%20Responsive%20Template&amp;amp;body=http://dreamlife.designforlifeden.com&quot; class=&quot;social_colored mail tooltip_s&quot; title=&quot;Mail&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- social links end --&gt;
+&lt;/div&gt;
+&lt;!-- hover effect end --&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- item image end --&gt;
+</pre>    
+    </div>
+</div>
+
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: Tab</h3>
+    	<p>You can change tab headings position: <code>"left_navi"</code> or <code>"right_navi"</code> and you can add a few tab contents. I just add three contents.</p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- tab examples --&gt;
+&lt;div class=&quot;grid_6 alpha&quot;&gt;
+&lt;div class=&quot;divider_page&quot;&gt;&lt;h2&gt;Tabs with left navi&lt;/h2&gt;&lt;/div&gt;
+&lt;!-- tabs --&gt;
+&lt;div class=&quot;tabs&quot;&gt;
+&lt;!-- tab left navi --&gt;
+&lt;ul class=&quot;left_navi&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#tabs-1&quot;&gt;Nunc tincidunt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#tabs-2&quot;&gt;Proin dolor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#tabs-3&quot;&gt;Aenean lacinia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- tab left navi end --&gt;
+&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+&lt;!-- tab1 --&gt;
+&lt;div id=&quot;tabs-1&quot;&gt;
+&lt;p&gt;Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- tab1 end --&gt;
+&lt;!-- tab2 --&gt;
+&lt;div id=&quot;tabs-2&quot;&gt;
+&lt;p&gt;Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- tab2 end --&gt;
+&lt;!-- tab3 --&gt;
+&lt;div id=&quot;tabs-3&quot;&gt;
+&lt;p&gt;Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.&lt;/p&gt;
+&lt;p&gt;Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- tab3 end --&gt;
+&lt;/div&gt;
+&lt;!-- tabs end --&gt;
+&lt;/div&gt;
+</pre>    
+    </div>
+</div>
+
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: Accordion</h3>
+    	<p></p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- accordion example --&gt;
+&lt;div class=&quot;grid_4 lambda&quot;&gt;
+&lt;div class=&quot;divider_page&quot;&gt;&lt;h2&gt;Accordion&lt;/h2&gt;&lt;/div&gt;
+&lt;!-- accordion --&gt;
+&lt;div class=&quot;accordion&quot;&gt;
+&lt;h5&gt;Section 1&lt;/h5&gt;
+&lt;div&gt;
+&lt;p&gt;Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h5&gt;Section 2&lt;/h5&gt;
+&lt;div&gt;
+&lt;p&gt;Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h5&gt;Section 3&lt;/h5&gt;
+&lt;div&gt;
+&lt;p&gt;Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List item one&lt;/li&gt;
+&lt;li&gt;List item two&lt;/li&gt;
+&lt;li&gt;List item three&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h5&gt;Section 4&lt;/h5&gt;
+&lt;div&gt;
+&lt;p&gt;Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.&lt;/p&gt;
+&lt;p&gt;Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- accordion end --&gt;
+&lt;/div&gt;
+&lt;!-- accordion example end --&gt;
+</pre>    
+    </div>
+</div>
+
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: List Styles</h3>
+    	<p>Available a few way.</p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- list styles example --&gt;
+&lt;div class=&quot;grid_4 omega&quot;&gt;
+&lt;div class=&quot;divider_page&quot;&gt;&lt;h2&gt;List Styles&lt;/h2&gt;&lt;/div&gt;
+&lt;!-- list types --&gt;
+&lt;div class=&quot;grid_2 alpha&quot;&gt;
+&lt;ul class=&quot;check&quot;&gt;
+&lt;li&gt;Check&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;star&quot;&gt;
+&lt;li&gt;Star&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;plus&quot;&gt;
+&lt;li&gt;Plus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;minus&quot;&gt;
+&lt;li&gt;Minus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;arrow&quot;&gt;
+&lt;li&gt;Arrow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;arrow2&quot;&gt;
+&lt;li&gt;Arrow 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;arrow3&quot;&gt;
+&lt;li&gt;Arrow 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- list types end --&gt;
+&lt;!-- standart list types --&gt;
+&lt;div  class=&quot;grid_2 omega&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;Disk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;circle&quot;&gt;
+&lt;li&gt;Circle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;square&quot;&gt;
+&lt;li&gt;Square&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;roman&quot;&gt;
+&lt;li&gt;Roman&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;latin&quot;&gt;
+&lt;li&gt;Latin&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;katakana&quot;&gt;
+&lt;li&gt;Katakana&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;!-- standart list types end --&gt;
+&lt;/div&gt;
+&lt;!-- list styles example end --&gt;
+</pre>    
+    </div>
+</div>
+
+<div class="row">
+    <div class="span12">
+    	<h3>How to add: Feature Box</h3>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums">
+&lt;!-- a feature box --&gt;
+&lt;div class=&quot;feature_box&quot;&gt;
+&lt;div class=&quot;feature_icon&quot;&gt;&lt;a href=&quot;sliders.html&quot; class=&quot;edevices_icons32 icon32_25&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;feature_content&quot;&gt;
+&lt;div class=&quot;feature_heading&quot;&gt;
+&lt;div class=&quot;medium&quot;&gt;RESPONSIVE&lt;/div&gt;
+&lt;div class=&quot;large&quot;&gt;TEMPLATE&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;feature_desc&quot;&gt;Fusce consequat ipsum id nulla fringilla euismod. Morbi purus ut nibh eget faucibus nulla.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;feature_link&quot;&gt;&lt;a href=&quot;sliders.html&quot; class=&quot;arrows_icons16 icon16_5 tooltip_s&quot; title=&quot;Read More&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- a feature box end --&gt;
+</pre>    
+    </div>
+</div>
+
+<div class="row">
+    <div class="span12">
+    	<h3>How to change: Contact form e-mail</h3>
+    	<p><code>mailpost.php</code> file open with a text editor and change this line.</p>
+    </div>
+    <div class="span12">
+<pre class="prettyprint linenums:4">
+$address="your@mail.com";
+</pre>    
+    </div>
+</div>
+
+
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+
+
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="styles">
+                <div class="page-header">
+                    <h1>Styles <small>Styles customization and highlights</small></h1>
+                </div>
+
+                <div class="row">
+                    <div class="span3">
+                        <h3>Stylesheets</h3>
+                        <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>reset.css</code></td>
+                                    <td>XHTML, HTML4, HTML5 reset file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>style.css</code></td>
+                                    <td>Theme default css file</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text.css</code></td>
+                                    <td>Font type and size options</td>
+                                </tr>
+                                <tr>
+                                    <td><code>prettyPhoto.css</code></td>
+                                    <td>for prettyPhoto plugin</td>
+                                </tr>
+                                <tr>
+                                	<td><code>cameraSlider.css</code></td>
+                                	<td>for camera responsive slider</td>
+                                </tr>
+                                <tr>
+                                	<td><code>flex.css</code></td>
+                                	<td>for flex slider</td>
+                                </tr>
+                                <tr>
+                                	<td><code>ie8.css</code></td>
+                                	<td>for ie8 browser</td>
+                                </tr>
+                                <tr>
+                                	<td><code>liteaccordion.css</code></td>
+                                	<td>for accordion slider plugin</td>
+                                </tr>
+                                <tr>
+                                	<td><code>nivo-slider.css</code></td>
+                                	<td>for nivo slider</td>
+                                </tr>
+                                <tr>
+                                	<td><code>shortcodes.css</code></td>
+                                	<td>for shotcodes</td>
+                                </tr>
+                                <tr>
+                                	<td><code>wide.css</code></td>
+                                	<td>for wide screen</td>
+                                </tr>
+                                <tr>
+                                	<td><code>black.css</code></td>
+                                	<td>for black theme</td>
+                                </tr>
+                                <tr>
+                                	<td><code>blue.css</code></td>
+                                	<td>for blue theme</td>
+                                </tr>
+                                <tr>
+                                	<td><code>pink.css</code></td>
+                                	<td>for pink theme</td>
+                                </tr>
+                                <tr>
+                                	<td><code>orange.css</code></td>
+                                	<td>for orange theme</td>
+                                </tr>
+                                <tr>
+                                	<td><code>green.css</code></td>
+                                	<td>for green theme</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to change: Background</h3>
+                        <p><code>style.css</code> open with a text editor and change this line with your image file name.</p>
+                    </div>
+                
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums:91">
+/*for pattern*/
+background:url('../images/pattern/pattern.png');
+/*for fixed*/
+background:url('../images/bg/.png') no-repeat 50% 50%; 
+background-attachment: fixed;
+background-size: cover;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to change: Font Types</h3>
+                        <p><code>text.css</code> open with a text editor and change this lines.</p>
+                    </div>
+                
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums:11">
+body {
+  font: 12px/1.5em "Helvetica Neue", Arial, sans-serif;
+}
+</pre>
+<pre class="prettyprint linenums:38">
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'QlassikBoldRegular', Arial, sans-serif;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #484848;
+}
+
+.heading_404,
+.text_404,
+.feature_box .feature_heading,
+.member_info .member_name{
+	font-family: 'QlassikBoldRegular', Arial, sans-serif;
+}
+
+
+.dropcap,
+.iconbox32,.iconbox16,
+ul#mainmenu > li a,
+.camera_desc.heading,
+.filter_options ul li,
+.member_info .member_job,
+.a_member .social_title,
+.a_blogpost .social_links .share_text,
+.share-post,
+.a_work .work_heading,
+.a_work .social_links .share_text,
+.pricing_heading,
+.testimonial .who .name,
+.tabs > ul li a,
+.sc_button{
+	font-family: 'QlassikMediumRegular', Arial, sans-serif;
+}
+
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to change: Color Theme</h3>
+                        <p><code>style.css</code> open with a text editor and change this line with your color css.</p>
+                    </div>
+                
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums:86">
+/*You can use pink.css, blue.css, black.css, green.css, orange.css or you can duplicate a color file and choose your colors*/
+@import url('pink.css');
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to active: Wide</h3>
+                        <p><code>style.css</code> open with a text editor and change this line.</p>
+                    </div>
+                
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums:88">
+/*@import url('wide.css');*/
+change with this
+@import url('wide.css');
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: STYLES >> END ========================= -->
+            
+            
+            
+            <!-- ========================= SECTION: JAVASCRIPT >> START ========================= -->
+            <section id="javascript">
+            
+                <div class="page-header">
+                    <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+                </div>
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>JavaScript Files</h3>
+                        <p>Here's a list of the javascript files I'm using with this template, you can find more information opening each file:</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>cameraSlider.min.js</code></td>
+                                    <td>for responsive camera slider plugin</td>
+                                </tr>
+                                <tr>
+                                    <td><code>custom.js</code></td>
+                                    <td>for template functions and plugin config</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jflickrfeed.min.js</code></td>
+                                    <td>Flickr Feed plugin</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery-1.9.0.min.js</code></td>
+                                    <td>latest jquery version (2013-01-24)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery-ui-1.9.2.custom.min.js</code></td>
+                                    <td>tabs and accordion plugin</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.carouFredSel-6.1.0-packed.js</code></td>
+                                    <td>Carousel Plugin</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.components.js</code></td>
+                                    <td>all plugins here</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.cycle.all.js</code></td>
+                                    <td>cycle slider</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.easing.1.3.js</code></td>
+                                    <td>jquery easing</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.fitvids.js</code></td>
+                                    <td>for responsive embed videos</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.flexslider-min.js</code></td>
+                                    <td>flex slider</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.nivo.slider.pack.js</code></td>
+                                    <td>nivo slider</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.prettyPhoto.js</code></td>
+                                    <td>prettyPhoto lightbox</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.tipsy.js</code></td>
+                                    <td>tipsy tooltip</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.treeview.min.js</code></td>
+                                    <td>sub navigation</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.tweetable.min.js</code></td>
+                                    <td>latest tweet</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jqueryslidemenu.js</code></td>
+                                    <td>main menu</td>
+                                </tr>
+                                <tr>
+                                    <td><code>liteaccordion.jquery.js</code></td>
+                                    <td>accordion slider</td>
+                                </tr>
+                                <tr>
+                                    <td><code>swfobject.js</code></td>
+                                    <td>for swf embeds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to edit: Slider Options</h3>
+                        <p><code>custom.js</code> file on available all sliders config: </p>
+                    </div>
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:192">
+$('#cameraSlider').camera({
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:218">
+$('#cameraSlider2').camera({
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:263">
+$('#cycleSlider').after(
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:276">
+$('.testimonials').cycle({
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:296">
+$("#recentWorks").carouFredSel({
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:311">
+$(".our_clients").carouFredSel({
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:326">
+$(".team_members").carouFredSel({
+...
+</pre>
+<!-- Code Block >> End --> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:343">
+$('#lite-accordion').liteAccordion({
+...
+</pre>
+<!-- Code Block >> End -->
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:459">
+$('.flexslider').flexslider({
+...
+</pre>
+<!-- Code Block >> End -->
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:465">
+$('#nivoslider, .blogSlider > div, .projectSlider > div, .sliderinPage > div').nivoSlider({pauseTime:4000});
+...
+</pre>
+<!-- Code Block >> End -->
+                  
+                  
+                    </div>
+                </div>
+            
+            <div class="row">
+                    <div class="span12">
+                        <h3>How to active: Theme options panel</h3>
+                        <p><code>custom.js</code> open and change the following code: </p>
+                    </div>
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:430">
+//$('body').append(config_tags);
+change with this
+$('body').append(config_tags);
+</pre>
+<!-- Code Block >> End --> 
+                  
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to change: Flickr User ID</h3>
+                        <p>You can get <a href="http://idgettr.com/" target="_blank">here</a> your flickr id. If you want to change the flickr id, open up the file <code>custom.js</code> and change the following code: </p>
+                    </div>
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:149">
+id: '52617155@N08'
+</pre>
+<!-- Code Block >> End --> 
+                  
+                    </div>
+                </div>
+                
+                  <div class="row">
+                    <div class="span12">
+                        <h3>How to change: Twitter Feed User Name</h3>
+                        <p><code>custom.js</code> open and change the following code: </p>
+                    </div>
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:143">
+$('.latest_tweets, .sidebar_tweets').tweetable({username: 'Envato', time: true, limit: 2, replies: false});
+</pre>
+<!-- Code Block >> End --> 
+                  
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>How to change: Contact Form Alerts</h3>
+                        <p>If you want to change the open up the file <code>custom.js</code> and change the following code: </p>
+                    </div>
+                    <div class="span12">
+                    
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint js linenums:37">
+var alertmessage = "Please fill in all fields";
+</pre>
+<pre class="prettyprint js linenums:39">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box info'&gt;Please write your name!&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<pre class="prettyprint js linenums:41">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box info'&gt;Please write your email!&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<pre class="prettyprint js linenums:43">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box info'&gt;Please write a subject!&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<pre class="prettyprint js linenums:45">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box info'&gt;Please write your message!&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<pre class="prettyprint js linenums:47">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box info'&gt;Your message sending...&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<pre class="prettyprint js linenums:55">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box success'&gt;Thank you for your message!&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<pre class="prettyprint js linenums:61">
+$(&quot;.alert-contact&quot;).html(&quot;&lt;div class='alert_box error'&gt;Please try again!&lt;div class='close'&gt;&lt;/div&gt;&lt;/div&gt;&quot;);
+</pre>
+<!-- Code Block >> End --> 
+                  
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: JAVASCRIPT >> END ========================= -->
+
+
+
+            <!-- ========================= SECTION: PSD >> START ========================= 
+            <section id="psd">
+                <div class="page-header">
+                    <h1>Photoshop Files <small>Photoshop customization and highlights</small></h1>
+                </div>
+                <p>I've included three psds with this theme:</p>
+                <ul class="thumbnails">
+                    <li class="span3">
+                        <div class="thumbnail"> <img src="http://placehold.it/260x180" alt="">
+                            <div class="thumb-info">
+                                <h5>Thumbnail label</h5>
+                                <p>Thumbnail caption right here...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail"> <img src="http://placehold.it/260x180" alt="">
+                            <div class="thumb-info">
+                                <h5>Thumbnail label</h5>
+                                <p>Thumbnail caption right here...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail"> <img src="http://placehold.it/260x180" alt="">
+                            <div class="thumb-info">
+                                <h5>Thumbnail label</h5>
+                                <p>Thumbnail caption right here...</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail"> <img src="http://placehold.it/260x180" alt="">
+                            <div class="thumb-info">
+                                <h5>Thumbnail label</h5>
+                                <p>Thumbnail caption right here...</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <p>If you'd like to change the main image in the header, open "header.psd", make the necessary adjustments, and then save the file as "headerBG.png". Do the same for the buttons.</p>
+                
+            </section>
+            <!-- ========================= SECTION: PSD >> START ========================= -->
+            
+            
+            
+            <!-- ========================= SECTION: INSTALLATION >> START ========================= 
+            <section id="installation">
+                <div class="page-header">
+                    <h1>Installation <small>How to Install the Template</small></h1>
+                </div>
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>1. Install Theme</h3>
+                        <p>Here's a brief information about how to install your WordPress theme from scratch</p>
+                    </div>
+    
+                    <div class="span9">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"> 1.1) Organize Your Files </a> </div>
+                                <div id="collapseOne" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        <p>nim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> 1.2) Drag Your Files </a> </div>
+                                <div id="collapseTwo" class="accordion-body collapse in">
+                                    <div class="accordion-inner">
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree"> 1.3) Click Activate </a> </div>
+                                <div id="collapseThree" class="accordion-body collapse in">
+                                    <div class="accordion-inner">
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </section>
+            <!-- ========================= SECTION: INSTALLATION >> END ========================= -->
+
+
+            
+            <!-- ========================= SECTION: ALERTS >> START ========================= 
+            <section id="alerts">
+                <div class="page-header">
+                    <h1>Alerts <small>Twitter Bootstrap Alerts</small></h1>
+                </div>
+                <div class="alert"> <a class="close" data-dismiss="alert">×</a> <strong>Info!</strong> Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.. </div>
+                <div class="alert alert-error"> <a class="close" data-dismiss="alert">×</a> <strong>Oh snap!</strong> Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.. </div>
+                <div class="alert alert-success"> <a class="close" data-dismiss="alert">×</a> <strong>Well Done!</strong> Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.. </div>
+                <div class="alert alert-info"> <a class="close" data-dismiss="alert">×</a> <strong>Heads Up!</strong> Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.. </div>
+                <div class="alert alert-block"> 
+                	<a class="close" data-dismiss="alert">×</a>
+                    <h4 class="alert-heading">Warning!</h4>
+            		<p>Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur..</p>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: ALERTS >> END ========================= -->
+
+            <hr />
+    
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. If you have a more general question relating to the themes on ThemeForest.net</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; DesignForLife 2013</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+         
+        
+        <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+<!-- Code Block >> Start -->                   
+<pre>
+2013-01-26
+ ^ Main menu circle effect
+ - Main menu circle effect tag
+ + Main menu circle effect fixed with css
+
+2013-01-24
+Template v1.0.0
+ ! First release
+Documentation v1.0.0
+ ! First release
+</pre>
+<!-- Code Block >> End -->                 
+<!-- Code Block >> Start -->                   
+<pre>Legend:
++   Addition
+^   Change
+-   Removed
+*   Security Fix
+#   Bug Fix
+!   Note</pre>
+<!-- Code Block >> End --> 
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CHANGELOG >> END -->
+        
+        
+        
+        <!-- CREDITS >> START -->
+        <div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="credits-label">Credits</h3>
+            </div>
+            <div class="modal-body">
+                <p>I've used the following images, icons or other files as listed.</p>
+                <h3>JavaScript</h3>
+                <ol>
+                    <li><a href="http://jquery.com" target="_blank">jQuery</a></li>
+                    <li><a href="http://jquery.com" target="_blank">jQuery UI</a></li>
+                    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing</a></li>
+                    <li><a href="http://www.dynamicdrive.com/dynamicindex1/treeview/index.htm" target="_blank">Treeview Plugin</a></li>
+                    <li><a href="http://www.pixedelic.com" target="_blank">Camera Slider</a></li>
+                    <li><a href="http://www.no-margin-for-errors.com" target="_blank">prettyPhoto</a></li>
+                    <li><a href="http://daverupert.com/2011/09/responsive-video-embeds-with-fitvids/" target="_blank">fitvids</a></li>
+                    <li><a href="http://nivo.dev7studios.com/" target="_blank">NivoSlider</a></li>
+                    <li><a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin" target="_blank">Flickr Feed</a></li>
+                    <li><a href="http://www.frebsite.nl" target="_blank">carouFredSel</a></li>
+                    <li><a href="http://jquery.malsup.com/cycle/" target="_blank">Cycle Slider</a></li>
+                    <li><a href="http://WooThemes.com" target="_blank">Flex Slider</a></li>
+                    <li><a href="mailto:jason@onehackoranother.com" target="_blank">Tipsy Tooltip</a></li>
+                    <li><a href="http://www.theodin.co.uk/" target="_blank">Twitter</a></li>
+                    <li><a href="http://www.dynamicdrive.com/" target="_blank">jQuery Multi Level CSS Menu #2</a></li>
+                    <li><a href="http://nicolahibbert.com/liteaccordion-v2/" target="_blank">Lite Accordion</a></li>
+                    <li><a href="http://code.google.com/p/swfobject/" target="_blank">SWF Object</a></li>
+                </ol>
+                <h3>CSS</h3>
+                <ol>
+                    <li><a href="http://adapt.960.gs/">Adapt 960.gs</a></li>
+                </ol>
+                <h3>Images</h3>
+                <ol>
+                    <li><a href="http://subtlepatterns.com/" target="_blank">Pattern Backgrounds</li>
+                   	<li><a href="http://photodune.net/user/ollyi" target="_blank">Pictures by ollyi</li>
+                   	<li><a href="http://www.iconsweets2.com/" target="_blank">Sweet2 Icon Set</li>
+                   	<li><a href="http://pixelb.in" target="_blank">14px Icon Set</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CREDITS >> END -->
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>
